@@ -150,6 +150,8 @@
 		<dict>
 			<key>IntelGFX</key>
 			<string>0x191E8086</string>
+			<key>WIFI</key>
+			<string>0x43A314E4</string>
 		</dict>
 		<key>USB</key>
 		<dict>
