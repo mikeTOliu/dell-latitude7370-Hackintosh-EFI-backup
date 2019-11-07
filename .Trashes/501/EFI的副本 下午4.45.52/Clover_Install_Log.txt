@@ -1,0 +1,20 @@
+
+Clover EFI installer log - Wed Feb 27 18:42:45 CST 2019
+Installer version: v2.4k r4879 EFI bootloader
+
+
+//欢迎使用 黑苹果 江波 为你配置的引导程序//
+
+
+======================================================
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *256.1 GB   disk2
+   1:                        EFI M550_EFI                209.7 MB   disk2s1
+   2:                  Apple_HFS M550                    255.2 GB   disk2s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk2s3
+
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
