@@ -1,5 +1,11 @@
-# dell-latitude7370-Hackintosh-EFI-backup 
+# dell-latitude7370-Hackintosh-EFI-backup
+**更新 2019-11-7** 
+
+修复无故重启，优化网卡驱动，声卡确认内建可用，修复杂音，择期更新内建脚本
+
+--- 
 ## 戴尔latitude7370 clover 配置
+
 Dell latitude 7370 
 
 Cpu:core m5 
