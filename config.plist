@@ -20,8 +20,6 @@
 				<true/>
 				<key>FixHPET</key>
 				<true/>
-				<key>FixUSB</key>
-				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -116,7 +114,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-disablegfxfirmware dart=0 nv_disable=1 brcmfx-country=US brcmfx-driver=1</string>
+		<string>-disablegfxfirmware dart=0 nv_disable=1 brcmfx-country=US</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -152,21 +150,21 @@
 		<dict>
 			<key>IntelGFX</key>
 			<string>0x191E8086</string>
+			<key>WIFI</key>
+			<string>0x43A314E4</string>
 		</dict>
-		<key>LANInjection</key>
-		<true/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x7)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>APPL,slot-name</key>
+				<key>AAPL,slot-name</key>
 				<string>WLAN</string>
 				<key>compatible</key>
 				<string>pci14e4,4353</string>
 				<key>device_type</key>
 				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<string>DW1820A(BCM4350)802.11ac Wireless</string>
 				<key>name</key>
 				<string>Airport</string>
 			</dict>
@@ -245,8 +243,6 @@
 		<true/>
 		<key>Debug</key>
 		<false/>
-		<key>DellSMBIOSPatch</key>
-		<true/>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -255,6 +251,63 @@
 		<true/>
 		<key>KernelXCPM</key>
 		<false/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>External icons patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleAHCIPort</string>
+				<key>Replace</key>
+				<data>
+				SW50ZXJuYWw=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext for 10.14.1 by Ricky</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4OPBAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/sPkJCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -262,12 +315,6 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>MLB</key>
-		<string>C02XRLYQHTD5</string>
-		<key>ROM</key>
-		<data>
-		G/GxE54K
-		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -282,7 +329,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02848501GUJ1JHJC</string>
+		<string>C028219024NJ1JH1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -296,7 +343,7 @@
 		<key>EfiVersion</key>
 		<string>196.0.0.0.0</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook</string>
 		<key>FirmwareFeatures</key>
 		<string>0xFC0FE13F</string>
 		<key>FirmwareFeaturesMask</key>
@@ -310,18 +357,16 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,3</string>
+		<string>MacBookPro7,1</string>
 		<key>SerialNumber</key>
-		<string>C02XRLYQHTD5</string>
+		<string>C02WRLY2HTD5</string>
 		<key>SmUUID</key>
-		<string>7652D3C0-6E14-491C-8269-A53130139E0A</string>
+		<string>F883B5E4-E6FC-48A3-BCC8-218446D22004</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>7652D3C0-6E14-491C-8269-A53130139E0A</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>

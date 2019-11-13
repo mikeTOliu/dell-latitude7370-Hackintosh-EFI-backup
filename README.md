@@ -1,4 +1,17 @@
-# dell-latitude7370-Hackintosh-EFI-backup
+# dell-latitude7370-Hackintosh-EFI-backuppe
+***更换1820a网卡需屏蔽针脚！！！！*** 
+
+***修改dvmt存在风险！！！***
+
+**更新 2019-11-12**  
+
+修复type-c接口（修眠后会失效）  
+
+声卡耳机修复脚本： [链接](https://github.com/mikeTOliu/daliansky-ALCPlugFix)  
+
+触摸板手势是真的没办法了，求大佬帮忙
+
+---
 **更新 2019-11-7** 
 
 修复无故重启，优化网卡驱动，声卡确认内建可用，修复杂音，择期更新内建脚本
