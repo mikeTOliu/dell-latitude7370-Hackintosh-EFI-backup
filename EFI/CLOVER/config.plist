@@ -16,9 +16,13 @@
 				<true/>
 				<key>AddPNLF</key>
 				<true/>
+				<key>FixAirport</key>
+				<true/>
 				<key>FixDisplay</key>
 				<true/>
 				<key>FixHPET</key>
+				<true/>
+				<key>FixLAN</key>
 				<true/>
 			</dict>
 			<key>Patches</key>
@@ -243,6 +247,12 @@
 		<true/>
 		<key>Debug</key>
 		<false/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>BrcmBluetoothInjector.kext</string>
+			<string>BrcmFirmwareData.kext</string>
+			<string>BrcmPatchRAM2.kext</string>
+		</array>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
