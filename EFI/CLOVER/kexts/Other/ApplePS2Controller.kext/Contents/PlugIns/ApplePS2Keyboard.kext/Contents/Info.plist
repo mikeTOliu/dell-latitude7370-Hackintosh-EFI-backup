@@ -42,6 +42,8 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.ApplePS2Keyboard</string>
+			<key>Enable Sierra Caps Lock Fix</key>
+			<true/>
 			<key>IOClass</key>
 			<string>ApplePS2Keyboard</string>
 			<key>IOProviderClass</key>
@@ -49,6 +51,8 @@
 			<key>Make capslock into control</key>
 			<false/>
 			<key>Swap alt and windows key</key>
+			<true/>
+			<key>Use ISO Layout</key>
 			<true/>
 		</dict>
 	</dict>
