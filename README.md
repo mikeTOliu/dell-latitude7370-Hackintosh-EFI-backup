@@ -1,8 +1,13 @@
 # dell-latitude7370-Hackintosh-EFI-backuppe
+***仅需替换efi中的clover文件夹，efi中包含我的引导信息可能会找不到mac的安装盘*** 
+
 ***更换1820a网卡需屏蔽针脚！！！！*** 
 
 ***修改dvmt存在风险！！！***  
 
+**更新 2020-2-13** 
+
+ 修复facksmc.kext 导致有一定概率无法启动的问题
 
 **更新 2020-2-11**  
 
