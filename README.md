@@ -1,4 +1,6 @@
 # dell-latitude7370-Hackintosh-EFI-backuppe
+## 本配置禁止作为商用 
+
 ***仅需替换efi中的clover文件夹，efi中包含我的引导信息可能会找不到mac的安装盘*** 
 
 ***更换1820a网卡需屏蔽针脚！！！！*** 
